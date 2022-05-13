@@ -42,6 +42,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.title-text-div{
+  padding-top: 3%;
+}
+
+.title-img-div{
+  padding-left: 7%;
+  text-align: right;
+}
+
+.title-img{
+  height: 100%;
+  width: 90%;
+}
+
 /* Contact and Footer Section */
 .tools-section {
   padding: 5%;
