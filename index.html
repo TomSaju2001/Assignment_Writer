@@ -86,13 +86,13 @@
               <button class="btn btn-primary btn-lg" type="button" id="btnFileUpload" name="button"><i class="fa-solid fa-upload fontAwm"></i>CUSTOM BACKGROUND</button>
             </div>
             <div class="col-lg-4">
-              <button class="btn btn-primary btn-lg" type="button" name="button">CHANGE HANDWRITING STYLE</button>
+              <button class="btn btn-primary btn-lg" type="button" name="button" onclick="incrementor()">CHANGE HANDWRITING STYLE</button>
             </div>
             <div class="col-lg-4">
-              <button class="btn btn-primary btn-lg" type="button" name="button">CHANGE TO DEFAULT PAGE</button>
+              <button class="btn btn-primary btn-lg" type="button" name="button" onclick="loadPage()">CHANGE TO DEFAULT PAGE</button>
             </div>
             <div class="downloadButtonDiv col-lg-12">
-              <button class="btn btn-outline-primary btn-lg" type="button" name="button"><i class="fa-solid fa-download fontAwm"></i>DOWNLOAD PAGE</button>
+              <button class="btn btn-outline-primary btn-lg" type="button" name="button" onclick="save(str(pageNum++))"><i class="fa-solid fa-download fontAwm"></i>DOWNLOAD PAGE</button>
             </div>
           </div>
 
