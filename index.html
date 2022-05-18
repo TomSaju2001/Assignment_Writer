@@ -77,49 +77,61 @@
           <fieldset>
             <textarea class="textarea" id="dataField" placeholder="Enter Text You want to be written a paper..!!" name="name" onkeyup="textChanged(this.value)"></textarea>
           </fieldset>
-          <input class="" type="file" id="pageUploader" onclick="" />
+          <input class="btn btn-primary btn-lg hidden" type="file" id="pageUploader" onclick="" />
 
 
           <!--Buttons-->
-          <div class="">
-            <button class="btn btn-primary" type="button" name="button">Upload Custom Background</button>
-
-            <button class="btn btn-primary" type="button" name="button">Change Handwriting Style</button>
-
-            <button class="btn btn-primary" type="button" name="button">Change to Default Page</button>
-
-            <button class="btn btn-primary" type="button" name="button">Download Page</button>
+          <div class="row">
+            <div class="col-lg-4">
+              <button class="btn btn-primary btn-lg" type="button" id="btnFileUpload" name="button"><i class="fa-solid fa-upload fontAwm"></i>CUSTOM BACKGROUND</button>
+            </div>
+            <div class="col-lg-4">
+              <button class="btn btn-primary btn-lg" type="button" name="button">CHANGE HANDWRITING STYLE</button>
+            </div>
+            <div class="col-lg-4">
+              <button class="btn btn-primary btn-lg" type="button" name="button">CHANGE TO DEFAULT PAGE</button>
+            </div>
+            <div class="downloadButtonDiv col-lg-12">
+              <button class="btn btn-outline-primary btn-lg" type="button" name="button"><i class="fa-solid fa-download fontAwm"></i>DOWNLOAD PAGE</button>
+            </div>
           </div>
 
           <!--Sliders-->
-          <div class="">
-            <label>Adjust X axis</label>
-            <input type="range" name="" value="" class="slider">
+          <div class="row sliderDiv">
+            <div class="col-lg-4">
+              <label>Adjust X axis</label>
+              <input type="range" name="" min="1" max="200" value="20" oninput="xaxis=float(this.value); loop();" class="slider">
+            </div>
+
+            <div class="col-lg-4">
+              <label>Adjust Y axis</label>
+              <input type="range" name="" min="1" max="200" value="20" oninput="yaxis=float(this.value); loop();" class="slider">
+            </div>
+
+            <div class="col-lg-4">
+              <label>Font Size</label>
+              <input type="range" name="" min="0.05" max="5" value="1" step="0.1" oninput="fontsize=float(this.value); loop();" class="slider">
+            </div>
+
+            <div class="col-lg-6">
+              <label>Width</label>
+              <input type="range" name="" value="700" min="100" max="800" oninput="w=float(this.value); loop();" class="slider">
+            </div>
+
+            <div class="col-lg-6">
+              <label>Line Spacing</label>
+              <input type="range" name="" min="50" max="100" value="60" oninput="linespacing=float(this.value); loop();" class="slider">
+            </div>
           </div>
 
-          <div class="">
-            <label>Adjust Y axis</label>
-            <input type="range" name="" value="" class="slider">
-          </div>
-
-          <div class="">
-            <label>Font Size</label>
-            <input type="range" name="" value="" class="slider">
-          </div>
-
-          <div class="">
-            <label>Width</label>
-            <input type="range" name="" value="" class="slider">
-          </div>
-
-          <div class="">
-            <label>Line Spacing</label>
-            <input type="range" name="" value="" class="slider">
-          </div>
         </form>
       </div>
+
       <div class="page-section col-lg-6">
         <h3 class="h3-page-section">Text to Handwritten Page</h3>
+        <div class="contributing">
+
+        </div>
       </div>
 
     </div>
@@ -154,6 +166,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <script src="Assets/javascript/script.js" charset="utf-8"></script>
+  <script src="Assets/javascript/sketch.js" charset="utf-8"></script>
 </body>
 
 </html>
