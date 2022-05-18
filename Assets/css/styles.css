@@ -1,0 +1,92 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-weight: 900;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Navigation Bar*/
+.navbar {
+  padding: 8px 0 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.navbar-image {
+  padding-bottom: 10px;
+}
+
+.nav-item {
+  padding: 0 12px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat"
+}
+
+/* title section */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.title-text-div{
+  padding-top: 3%;
+}
+
+.title-img-div{
+  padding-left: 7%;
+  text-align: right;
+}
+
+.title-img{
+  height: 100%;
+  width: 90%;
+}
+
+/* Enter text Section */
+
+.textarea{
+  margin-top: 2rem;
+  width: 100%;
+  height: 300px;
+}
+
+/* Contact and Footer Section */
+.tools-section {
+  padding: 5%;
+}
+
+.h3-entertext {
+  text-align: center;
+}
+
+.page-section {
+  padding: 5%;
+}
+
+.h3-page-section{
+    text-align: center;
+}
+/* Footer Section */
+#footer {
+  text-align: center;
+  background-color: #ff4c68;
+  padding: 3% 15% 1%;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
